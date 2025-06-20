@@ -1,4 +1,4 @@
-sqlite3==3.50.0
+sqlite3
 chromadb
 faiss-cpu==1.11.0
 llama-index==0.11.20
