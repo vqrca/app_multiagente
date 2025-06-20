@@ -5,8 +5,11 @@ from llama_index.vector_stores.faiss import FaissVectorStore
 from llama_index.core.storage import StorageContext 
 from llama_index.core import load_index_from_storage
 from llama_index.llms.groq import Groq
+from dotenv import load_dotenv
+import os
 
-GROQ_API_KEY = GROQ_API_KEY
+load_dotenv()
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 # Configurar LLM do Groq
 llm = Groq(model="llama-3.3-70b-versatile", api_key=GROQ_API_KEY)
