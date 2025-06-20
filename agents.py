@@ -3,6 +3,8 @@ from crewai import Agent
 from llama_index.llms.groq import Groq
 from tools import retrieve_faq, get_user_info
 
+GROQ_API_KEY = GROQ_API_KEY
+
 llm = Groq(model="llama-3.3-70b-versatile", api_key=GROQ_API_KEY)
 
 # Agente central 
