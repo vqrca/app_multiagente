@@ -1,12 +1,7 @@
 
 from crewai import Agent
 from llama_index.llms.groq import Groq
-from dotenv import load_dotenv
-import os
 from tools import retrieve_faq, get_user_info
-
-load_dotenv()
-GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 llm = Groq(model="llama-3.3-70b-versatile", api_key=GROQ_API_KEY)
 
