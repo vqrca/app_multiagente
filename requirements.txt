@@ -1,4 +1,4 @@
-pysqlite3-binary
+sqlite3==3.50.0
 chromadb
 faiss-cpu==1.11.0
 llama-index==0.11.20
