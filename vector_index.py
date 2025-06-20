@@ -6,6 +6,8 @@ from llama_index.core.storage import StorageContext
 from llama_index.core import load_index_from_storage
 from llama_index.llms.groq import Groq
 
+GROQ_API_KEY = GROQ_API_KEY
+
 # Configurar LLM do Groq
 llm = Groq(model="llama-3.3-70b-versatile", api_key=GROQ_API_KEY)
 
